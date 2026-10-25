@@ -1,0 +1,24 @@
+{
+  "name": "dsh-remote-control-workspace",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "test": "node --test packages/remote-control/test/*.test.mjs packages/remote-control/client/*.test.mjs packages/remote-control/companion/test/*.test.mjs packages/remote-control/companion/test/desktop-backend.mjs packages/remote-control/companion/test/desktop-input.mjs packages/remote-control/companion/test/desktop-native-smoke.mjs packages/remote-control/companion/test/desktop-png.mjs packages/remote-control/companion/test/desktop-service.mjs",
+    "build": "node tools/build.mjs",
+    "test:reload": "node tools/verify-reload.mjs"
+  },
+  "devDependencies": {
+    "esbuild": "0.28.2",
+    "jsdom": "27.1.0",
+    "react": "19.2.0",
+    "react-dom": "19.2.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/juniper234/dsh-remote-control.git"
+  },
+  "author": {
+    "name": "juniper234",
+    "url": "https://github.com/juniper234"
+  }
+}
